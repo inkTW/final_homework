@@ -1,7 +1,4 @@
-# Purpose
-終端機選單與環境模擬規格定義。
-
-# Requirements
+## MODIFIED Requirements
 
 ### Requirement: Terminal UI and Environment Simulation
 The system SHALL provide an interactive text-based dashboard and menu interface in the terminal, including environment simulation controls and robust input validation. On Windows systems, the system MUST configure the active console input and output code pages to UTF-8 (CP_UTF8) on startup to prevent text corruption (garbage characters).

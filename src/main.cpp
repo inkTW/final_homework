@@ -2,6 +2,9 @@
 #include <limits>
 #include <string>
 #include <memory>
+#ifdef _WIN32
+#include <Windows.h>
+#endif
 #include "SmartHome.h"
 #include "SmartLight.h"
 #include "SmartThermostat.h"
@@ -311,6 +314,10 @@ void handleRuleManagement(SmartHome& home) {
 // ==========================================
 
 int main() {
+    #ifdef _WIN32
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+    #endif
     std::cout << "============================================================\n";
     std::cout << "        🌟 歡迎使用智慧家居設備模擬與自動化系統 🌟\n";
     std::cout << "============================================================\n";
