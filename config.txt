@@ -1,0 +1,10 @@
+# 智慧家居系統存檔設定檔
+# DEVICE [ID] [Type] [Name] [isOn] [屬性1] [屬性2]
+# RULE [ID] [Type] [Name] [觸發條件...]
+
+DEVICE 1 Light 客廳吸頂燈 0 80 暖色
+DEVICE 2 Thermostat 客廳冷氣機 0 26 制冷
+DEVICE 3 Camera 玄關監視器 1 0 1
+
+RULE 1 TEMP 高溫自動開啟冷氣 28 > 2 1
+RULE 2 TIME 深夜自動關閉客廳燈 23 1 0
